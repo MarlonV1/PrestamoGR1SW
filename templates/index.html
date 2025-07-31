@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Simulador de Préstamos</title></head>
+<body>
+  <h1>Simulador de Préstamos</h1>
+  <form method="POST">
+    Monto: <input name="monto" required><br>
+    Tasa de interés anual (%): <input name="tasa" required><br>
+    Plazo (meses): <input name="plazo" required><br>
+    <button type="submit">Calcular</button>
+  </form>
+
+  {% if resultado %}
+    <h3>Resultado:</h3>
+    <p>Cuota mensual: ${{ resultado.cuota }}</p>
+    <p>Interés total: ${{ resultado.interes }}</p>
+    <p>Total a pagar: ${{ resultado.total }}</p>
+  {% endif %}
+</body>
+</html>
