@@ -19,13 +19,15 @@ Este proyecto es una aplicación web sencilla desarrollada en Python con Flask, 
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/tu_usuario/simulador-prestamos.git
-   cd simulador-prestamos
+   git clone https://github.com/MarlonV1/PrestamoGR1SW.git
+   cd prestamos
 
 2. Crear y activar un entorno virtual
 python -m venv venv
-source venv/bin/activate  # Linux/macOS
-venv\Scripts\activate     # Windows
+## Linux/macOS
+source venv/bin/activate  
+## Windows
+venv\Scripts\activate     
 
 3. Instala las dependencias
 pip install -r requirements.txt
