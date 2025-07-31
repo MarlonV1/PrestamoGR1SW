@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head><title>Simulador de Préstamos</title></head>
+<head>
+  <title>Simulador de Préstamos</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
 <body>
   <h1>Simulador de Préstamos</h1>
   <form method="POST">
-    Monto: <input name="monto" required><br>
-    Tasa de interés anual (%): <input name="tasa" required><br>
-    Plazo (meses): <input name="plazo" required><br>
+    Monto: <input name="monto" required>
+    Tasa de interés anual (%): <input name="tasa" required>
+    Plazo (meses): <input name="plazo" required>
     <button type="submit">Calcular</button>
   </form>
 
